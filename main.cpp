@@ -1,8 +1,15 @@
 #include <iostream>
+#include <conio.h>
+#include "assets/include/menu.h"
 
-/* Main controler of the menu, menu configuration in the future should not be done here */
+using namespace std;
 
-int main() {
+int main(){
+	string tCursor = "--> ";
+	Menu *menu = new Menu();
 	
-	return 0;
+	menu->setCursor(tCursor);
+	cout << "Cursor aqui: ";
+	menu->printCursor();
+    return 0;
 }
