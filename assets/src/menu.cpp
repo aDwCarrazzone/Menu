@@ -1,6 +1,6 @@
 #include "../include/menu.h"
 
-Menu::base(){
+Menu::Menu(){
 	cursor = "UNDEFINED";
 };
 
@@ -17,3 +17,6 @@ void Menu::printCursor(){
 	cout << cursor << endl;
 }
 
+bool Menu::positionTrue(){
+	return position == option;
+}
